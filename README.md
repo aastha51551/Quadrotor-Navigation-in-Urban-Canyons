@@ -1,13 +1,6 @@
----
-marp: true
-theme: default
-class: lead
----
+
 
 # Quadrotor Navigation in Urban Canyons  
-**Presented by:** Astha Sahu (22B0453)  
-**Institute:** Indian Institute of Technology Bombay  
-**Year:** 2025  
 
 ---
 
