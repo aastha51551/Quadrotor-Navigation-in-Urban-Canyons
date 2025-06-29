@@ -6,17 +6,12 @@
 
 ## Introduction
 
-The increasing deployment of quadrotors in urban environments for applications such as:
+The increasing deployment of quadrotors in urban environments for applications such as surveillance, delivery, and emergency response raises the need for precise trajectory tracking. 
+- Urban canyons, formed by tall buildings lining narrow streets, create challenging flight conditions.
+- These environments generate turbulent wind flows with vortices, gusts, and strong aerodynamic disturbances.
+- Accurate trajectory tracking becomes difficult due to unpredictable urban wind dynamics with traditional controllers like PI, PID.
+- This project aims to explore MPC, LQOC, and Pole Placement controllers for improved trajectory tracking.
 
-- Surveillance  
-- Delivery  
-- Emergency response  
-
-raises the need for precise trajectory tracking.
-
-- Urban canyons (tall buildings, narrow streets) = turbulent airflow  
-- Traditional controllers (PI, PID) struggle with unpredictable dynamics  
-- We explore **MPC**, **LQOC**, and **Pole Placement** for better control
 
 ---
 
@@ -39,20 +34,14 @@ $$
 - $a^w$: Translational acceleration  
 - $\alpha^B$: Angular acceleration  
 - $\omega^B$: Angular velocity
-
----
-
-## Mathematical Model
-
-**Additional Dynamics:**
+  
+Also,
 
 - $\tau^B = \tau^B_{drag} + \tau^B_{thrust}$  
 - $f^B_{thrust} = \sum_{i=1}^{4} R^B_{P_i} T^{P_i}$  
 - $\tau^B_{thrust} = \sum_{i=1}^{4} (\rho_i^B \times R^B_{P_i} T^{P_i})$  
 
 ---
-
-## Mathematical Model
 
 **Final Quadrotor Dynamics:**
 
@@ -108,13 +97,13 @@ $$
 
 ## Wind Graphs
 
-![Wind X](image/windx.png)  
-![Wind Y](image/windy.png)  
-![Wind Z](image/windz.png)
+![Wind X](images/windx.png)  
+![Wind Y](images/windy.png)  
+![Wind Z](images/windz.png)
 
 ---
 
-![Combined Wind](image/windall.png)  
+![Combined Wind](images/windall.png)  
 *Wind velocity over time*
 
 ---
@@ -153,11 +142,11 @@ $$
 
 ## Open Loop Simulation
 
-![Openloop1](image/openloop1.png) ![Openloop2](image/openloop2.png)
+![Openloop1](images/openloop1.png) ![Openloop2](images/openloop2.png)
 
 ---
 
-![Openloop3](image/openloop3.png)  
+![Openloop3](imagesss/openloop3.png)  
 *Blue = Desired, Pink = Actual*
 
 ---
@@ -196,11 +185,11 @@ $$
 
 ---
 
-![Observer 2](observer2.png)
+![Observer 2](images/observer2.png)
 
 ---
 
-![Observer 1](image/observer1.png)
+![Observer 1](images/observer1.png)
 
 ---
 
@@ -216,8 +205,8 @@ $$
 
 ---
 
-![PPC](image/ppc2.png)  
-![PPC](image/ppc1.png)
+![PPC](images/ppc2.png)  
+![PPC](images/ppc1.png)
 
 ---
 
@@ -236,8 +225,8 @@ Where:
 
 ---
 
-![LQOC](image/lqoc2.png)  
-![LQOC](image/lqoc1.png)
+![LQOC](images/lqoc2.png)  
+![LQOC](images/lqoc1.png)
 
 ---
 
@@ -258,8 +247,8 @@ Constraints via $A_{eq}, b_{eq}$
 
 ---
 
-![MPC](image/mpc2.png)  
-![MPC](image/mpc1.png)
+![MPC](images/mpc2.png)  
+![MPC](images/mpc1.png)
 
 ---
 
@@ -289,4 +278,4 @@ Constraints via $A_{eq}, b_{eq}$
 
 ---
 
-# 🙏 Thank You!
+
